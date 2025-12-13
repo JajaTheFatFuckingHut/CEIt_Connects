@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CEIT Connects | Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .bg-image {
+            background-image: url("resources/IMG_4804 2.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body class="vh-100 overflow-hidden">
+
+<div class="container-fluid h-100 p-0">
+    <div class="row h-100 g-0 m-0">
+
+        <div class="col-md-6 d-none d-md-block bg-image"></div>
+
+        <div class="col-md-6 d-flex align-items-center justify-content-center bg-light">
+            <div class="w-100 px-4" style="max-width: 420px;">
+
+                <div class="text-center mb-4">
+                    <img src="resources/logo3.png" alt="CEIT Connects Logo"
+                         class="mb-2" style="max-width:120px;">
+                    <h2 class="fw-bold">CEIT CONNECTS</h2>
+                    <p class="text-muted">Login</p>
+                </div>
+
+                <div class="d-flex justify-content-center gap-3 mb-4">
+                    <a href="Login.html" class="btn btn-outline-secondary btn-sm">Student</a>
+                    <a href="Admin-login.html" class="btn btn-outline-primary btn-sm">Admin</a>
+                </div>
+
+                <form action="/login" method="post">
+
+                    <div class="mb-3">
+                        <label class="form-label">Username</label>
+                        <input type="text" class="form-control" name="username" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Password</label>
+                        <input type="password" class="form-control" name="password" required>
+                    </div>
+
+                    <div class="d-flex justify-content-between mb-3">
+                        <a href="#" class="small">Forgot Password?</a>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100">
+                        Login
+                    </button>
+
+                    <p class="text-center mt-3">
+                        Not a member? <a href="Register.html">Register</a>
+                    </p>
+
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
